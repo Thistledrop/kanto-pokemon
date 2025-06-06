@@ -45,9 +45,7 @@ function fetchPokemonData(pokemon){
 function renderPokemon(pokeData){
     let allPokemonContainer = document.getElementById('poke-container');
     let pokeContainer = document.createElement("div") //div will be used to hold the data/details for indiviual pokemon.{}
-    pokeContainer.classList.add('ui', 'card');
-
-    createPokeImage(pokeData.id, pokeContainer);
+    pokeContainer.classList.add('card');
 
     let nameContainer = document.createElement("div");
     nameContainer.classList.add('name');
@@ -59,9 +57,11 @@ function renderPokemon(pokeData){
     pokeNumber.innerText = `#${pokeData.id}`
 
     nameContainer.append(pokeName, pokeNumber)
+
+    createPokeImage(pokeData.id, pokeContainer);
    
     let pokeTypes = document.createElement('ul') //ul list will hold the pokemon types
-  
+    pokeTypes.classList.add('types');
 
     createTypes(pokeData.types, pokeTypes) // helper function to go through the types array and create li tags for each one
 
