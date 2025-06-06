@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/kanto-pokemon/FileContentIndex
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/.vs/kanto-pokemon/v17/.wsuo
+/.vs/kanto-pokemon/v17/DocumentLayout.backup.json
+/.vs/kanto-pokemon/v17/DocumentLayout.json
